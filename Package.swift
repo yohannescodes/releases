@@ -9,19 +9,14 @@ let package = Package(
     products: [
         .library(
             name: "releases",
-            targets: ["AppFramework", "FlutterEngine"]
+            targets: ["releases"]
         )
     ],
     targets: [
         .binaryTarget(
-            name: "AppFramework",
-            url: "https://github.com/yohannescodes/releases/releases/download/3.0.0/App.xcframework.zip",
-            checksum: "b81cd7ea92681c5a649e9a4adea573d56b188d8bcaee619334f7e0d824c9f6fe"
-        ),
-        .binaryTarget(
-            name: "FlutterEngine",
-            url: "https://github.com/yohannescodes/releases/releases/download/3.0.0/Flutter.xcframework.zip",
-            checksum: "af474f2ed20dba39cf12678f33bd061005a1c5c28bc306462828438fec23653c"
+            name: "releases",
+            url: "https://github.com/yohannescodes/releases/releases/download/3.0.0/releases.zip",
+            checksum: "1ebdb770269391fbfd29abefc4e48ded0b26e34fa0f3a56a9f75a7f66f95f691"
         )
     ]
 )
